@@ -1,0 +1,62 @@
+# ==============================================================================
+# Git Ignore Configuration
+# Vision-Based Assistive Perception System with Voice Assistance for the Visually Impaired
+# ==============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+
+# --- Environment & Credentials ---
+# Never commit actual credentials or secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.pfx
+secrets/
+credentials.json
+service_account.json
+
+# --- Flutter / Dart ---
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/flutter_*.png
+
+# Android build artifacts
+mobile/android/**/*.apk
+mobile/android/**/*.aab
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/app/release/
+mobile/android/key.properties
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
